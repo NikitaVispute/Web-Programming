@@ -16,3 +16,5 @@ BabyNames (name, year, ranking, gender) <br>
 For gender values, use ‘m’ and ‘f’.<br>
 
 You can use attached sql file to insert records into your table.<br>
+
+Used MAMP Web Server (Apache, MySQL) to run the php pages and created the database in PHPMyAdmin.<br>
