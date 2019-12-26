@@ -24,3 +24,26 @@ password: root
 Database created  using MySQL in PHPMyAdmin
 
 
+You will need to configure your MAMP server to define an end point (URL) for your web service.
+
+How to configure MAMP for Mac OS:
+
+Create api folder under /Applications/MAMP/htdocs directory.
+
+Save index.php under /Applications/MAMP/htdocs/api directory.
+
+Add below line to  /Applications/MAMP/conf/apache/httpd.conf file:
+Alias /books "/Applications/MAMP/htdocs/api/index.php"
+
+How to configure MAMP for Windows:
+
+Create api folder under C:/MAMP/htdocs directory.
+
+Save index.php under C:/MAMP/htdocs/api directory.
+
+Add below line to C:/MAMP/conf/apache/httpd.conf file:
+Alias /books "C:/MAMP/htdocs/api/index.php"
+
+Restart apache server.
+
+Check your api at http://localhost/books.
