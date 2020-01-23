@@ -1,0 +1,63 @@
+<% include partials/header %>
+
+<div class="container">
+
+    <h1> Add new Item</h1>
+
+    <form action="/items" method="POST">
+        <div class="form-group">
+            <input class="form-control" placeholder="Image" type="text" name="image" value="black_shirt.png">
+        </div>
+        <div class="form-group">
+                <input class="form-control" placeholder="age" type="text" name="age_group" value="adult">
+            </div>
+        <div class="form-group">
+                <input class="form-control" placeholder="Gender" type="text" name="gender" value="female">
+            </div>
+        <div class="form-group">
+            <input class="form-control" placeholder="Title" type="text" name="title" value="Black Shirt">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Price Discount" name="price_discount" value="0">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" placeholder="Description" name="description">Jet black shirt for parties</textarea>
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Price Currency (USD)" name="price_currency" value="USD">
+        </div>
+        
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Price Value" name="price_value" value="200">
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Campaign Name" name="price_campaign" value="None">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Default Sizes (comma separated)" name="details_sizes">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Size type" name="details_size_type" value="xs, s, m, l, xl">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Item Color" name="details_color" value="Black">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Item Style" name="details_style" value="Sports">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Care Instructions" name="details_care_instructions" value="Machine Wash">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Composition" name="details_composition" value=" Cotton 80%, Polyester 20%">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Type" name="details_type" value="Half Sleeve, Rugged Look">
+        </div>
+        <button class="btn btn-primary" type="submit"> Save</button>
+    </form>
+    <a href="/"> Cancel</a>
+</div>
+<% include partials/footer %>

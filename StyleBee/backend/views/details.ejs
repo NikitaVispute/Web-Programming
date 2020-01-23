@@ -1,0 +1,61 @@
+<% include partials/header %>
+<% if(user && user.type === "admin") { %>
+    <div class="jumbotron">
+        <h3 class="display-4">Admin Controls</h3>
+        <div class="row admin-details">
+        <form action="/items/<%= item._id%>?_method=DELETE" method="POST">
+            <button class="btn btn-danger" type="submit">Delete</button>
+        </form>  
+        <a href="/items/edit/<%= item._id%>"><button class="btn btn-primary">Edit</button></a></li>
+    </div>
+    </div>
+<% } %>
+    <div class="container">
+            <!-- <img class="img-thumbnail" style="height:200px; width:200px;" src="/images/<%= item.image %>"/><br>
+            <p><%= item.title %></p>
+            <p>Price $<%= item.price.value %></p>
+            <p><%= item.price.description %></p>
+            <p>
+                Sizes available 
+                <% item.details.sizes.forEach(function(size) { %>
+                    <%= size %>
+                <%}); %>
+            </p> -->
+            <div class="card mb-3" >
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <img src="/images/<%= item.image%>" class="card-img">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= item.title%></h5>
+                            <p class="card-text"><%= item.description%></p>
+                            <p class="card-text">$<%= item.price.value%></p>
+                            <% if(cart.quantity) {%>
+                            <p class="card-text">Qty: <%= cart.quantity%></p>
+                            <% } %>
+                            <div class="row add-to-cart-group">
+                                    <form action="/cart" method="POST">
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="id" type="hidden" name="_id" value=<%= item._id%>>
+                                            <input class="form-control" placeholder="quantity" type="hidden" name="quantity" value=1>
+                                        </div>
+                                        <button class="btn btn-primary" type="submit">Add to Cart</button>
+                                    </form>
+                        
+                                    <% if(cart.quantity) {%>
+                                        <form action="/cart" method="POST">
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="id" type="hidden" name="_id" value=<%= item._id%>>
+                                                <input class="form-control" placeholder="quantity" type="hidden" name="quantity" value=-1>
+                                            </div>
+                                            <button class="btn btn-danger" type="submit">Remove 1 item</button>
+                                        </form>
+                                    <% } %>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+<% include partials/footer %>
