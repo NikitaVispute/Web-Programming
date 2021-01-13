@@ -1,4 +1,6 @@
-A video application by using Node.js and Express.js.
+# A video application by using Node.js and Express.js.
+
+**Technology: NodeJS, Express, MongoDB**
 
 1. Application includes all CRUD operations (Create, Read, Update, Delete) for manipulating videos.
 
