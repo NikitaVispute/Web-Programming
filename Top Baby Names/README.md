@@ -1,4 +1,14 @@
-# Top Baby Names using AJAX, jQuery, PHP, HTML
+# Top Baby Names Display
+
+**Technology: HTML, JQuery, AJAX, PHP, MySQL.**
+
+**1. Displayed 5 most popular baby names (male and female) from years 2005-2015.**
+
+**2. An AJAX call is made to dynamically display the results when the user clicks 'Submit' which will make a request for the php code on the server.**
+
+**3. The php code will connect to the MySQL database and fetch the top-five popular names for the selected year and gender.**
+
+Instructions:
 
 Display the baby names and their popularity rankings for a given year and gender. <br>
 
