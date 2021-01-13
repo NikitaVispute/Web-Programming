@@ -1,6 +1,9 @@
-Implement a simple RESTful web service using PHP.
+# Implement a simple RESTful web service using PHP.
 
-Web service provided information about books.
+**Technology: PHP, JSON, MySQL.<br>** 
+**1. Implemented a RESTful web service that provides information about books.<br>
+2. A list of books or a particular book is displayed in JSON format. The book information is stored in MySQL database.<br>**
+**3. Web service provided information about books. <br>**
 
 http://localhost/books will give list of books that are stored in your database.
 
