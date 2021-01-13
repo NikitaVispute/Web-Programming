@@ -1,3 +1,8 @@
+# StyleBee Online Clothing Store
+**Technology: NodeJS, Express, MongoDB.<br>
+•	Developed a simple ecommerce website for online shopping of clothes called StyleBee, an online Fashion Retailer for multiple brands in clothing for men, women and children. <br>
+•	The online store has all the basic functions like a shopping cart, viewing all the items with pagination as well as order history, search functionality as well as user authentication. Only the admin user can add, delete or update any item into the database along with the other regular functions of a non-admin user.<br>**
+
 Main Functionalities:
 
 1.	User signup and login:
