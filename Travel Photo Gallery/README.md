@@ -1,7 +1,8 @@
 # Travel Photo Gallery
 
-Technology: HTML, CSS, Bootstrap, JQuery, AJAX, JSON, Apache Web Server. <br>
-•	Built a photo gallery for travel photo sharing website using JQuery and AJAX to create mousemove, mouseleave, mouseenter handlers and make the gallery look attractive for users when they view it.<br>
+**Technology: HTML, CSS, Bootstrap, JQuery, AJAX, JSON, Apache Web Server.** <br>
+
+**Built a photo gallery for travel photo sharing website using JQuery and AJAX to create mousemove, mouseleave, mouseenter handlers and make the gallery look attractive for users when they view it.**<br>
 
 
 When the document is loaded, an AJAX call is made to download the data.json file (it contains an array of image objects) and displays images on the html page. When the user hovers over the image, show the larger version of the image along with the caption. <br>
